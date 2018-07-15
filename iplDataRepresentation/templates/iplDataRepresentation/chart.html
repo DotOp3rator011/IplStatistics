@@ -1,0 +1,9 @@
+<script src="https://code.highcharts.com/highcharts.src.js"></script>
+{% extends 'iplDataRepresentation/base.html' %}
+
+{% block body %}
+<div id="chart"></div>
+<script>
+    Highcharts.chart("chart",{{chart|safe}});
+</script>
+{% endblock %}
